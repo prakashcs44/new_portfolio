@@ -29,8 +29,8 @@ function Skills() {
 
 
   return (
-    <div id="skills" className=" shadow-md w-[95vw]  mt-20 dark:bg-slate-900 dark:text-white pb-12" ref={skillsRef}>
-      <h1 className="text-center text-3xl border-b-2 font-bold py-8 ">
+    <div id="skills" className=" shadow-md w-[95vw]  mt-20 dark:bg-slate-900 dark:text-white pb-12 flex flex-col items-center" ref={skillsRef}>
+      <h1 className="text-center text-3xl border-b-2 font-bold py-8 w-[90%]">
         Skills
       </h1>
       <div className="flex items-center justify-center gap-5 pt-5">

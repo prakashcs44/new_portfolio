@@ -4,7 +4,7 @@ export const PageContext = createContext({});
 
 export default function PageContextProvider({ children }) {
   const [darkMode, setDarkMode] = useState(true);
-  const [currSection, setCurrSection] = useState("about");
+  const [currSection, setCurrSection] = useState("home");
   
 
   return (

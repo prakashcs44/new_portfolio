@@ -4,13 +4,15 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const navItem = [
   {
+   name:"Home",
+   id:"home",
+  },
+  
+  {
     name: "Projects",
     id: "projects",
   },
-  {
-    name: "About",
-    id: "about",
-  },
+  
   {
     name: "Skills",
     id: "skills",
@@ -31,7 +33,7 @@ function Header() {
  }
  
   return (
-    <div className="py-5 shadow-md w-full fixed z-10 bg-white top-0 dark:text-white dark:bg-slate-900 dark:shadow-slate-900">
+    <div className="py-5  w-full fixed z-10 bg-white top-0 dark:text-white dark:bg-slate-900 ">
       
       <ul className="hidden md:flex justify-center gap-28 font-medium">
         {navItem.map((item) => {

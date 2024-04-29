@@ -1,16 +1,18 @@
-import React, { useCallback, useContext, useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { PageContext } from '../contexts/PageContext';
 
 
 const navItem = [
   {
+    name:"Home",
+    id:"home",
+   },
+   
+  {
     name:"Projects",
     id:"projects"
   },
-  {
-    name:"About",
-    id:"about"
-  },
+  
   {
     name:"Skills",
     id:"skills"
@@ -69,7 +71,7 @@ function HamburgerMenu({navItemHandler}) {
       </button>
       </div>
      
-      <ul className={`${!open&&"hidden"} flex flex-col  items-center gap-4 pt-10`}>
+      <ul className={`${!open&&"hidden"} flex flex-col  items-center gap-4 pt-10 text-xl`}>
       {navItem.map((item) => {
           return (
             <li

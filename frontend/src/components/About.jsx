@@ -1,5 +1,4 @@
 import React,{ useRef, useEffect, useContext } from 'react';
-import img from "../assets/WhatsApp Image 2024-04-27 at 2.42.34 PM.jpeg";
 import {PageContext} from "../contexts/PageContext";
 function About() {
 
@@ -26,8 +25,14 @@ function About() {
 
 
   return (
-    <div id="about" className="flex flex-col md:h-[70vh] mt-32 shadow-lg justify-around items-center w-[95vw] md:flex-row dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 " ref = {aboutRef}>
-      <img src={img} alt="prakash" className="rounded-full w-80 h-80 flex-shrink-0" />
+    <div id="about" className='dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg' ref = {aboutRef}>
+     
+     <h1 className="text-center text-3xl border-b-2 font-bold py-8 w-[90%] ">
+       About me
+      </h1>
+      
+    <div  className="flex flex-col md:h-[70vh]   justify-around items-center  md:flex-row " >
+      
       <div className="md:text-2xl text-lg font-medium text-center flex flex-col gap-8 py-4">
         <p>Hey there! I'm Prakash,</p>
         <p>a passionate Full Stack Developer based in India</p>
@@ -35,6 +40,7 @@ function About() {
         <p>and a knack for problem-solving,</p>
         <p>I thrive on turning ideas into reality through elegant and efficient code.</p>
       </div>
+    </div>
     </div>
   );
 }

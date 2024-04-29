@@ -5,6 +5,7 @@ import Projects from "./components/Projects";
 import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import Home from "./components/Home";
 import { PageContext } from "./contexts/PageContext";
 
 function App() {
@@ -16,7 +17,8 @@ function App() {
       } flex flex-col items-center justify-center relative dark:bg-black `}
     >
       <Header />
-      <About />
+      <Home/>
+     
       <Projects />
       <Skills />
       <Contact />
