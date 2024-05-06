@@ -10,7 +10,7 @@ const projects = [
     imgLink: p1img,
     desc: "Full stack ecommerce website built using MERN stack",
     sourceLink: "https://github.com/prakashcs44/ecommerce_website",
-    demoLink: "https://ecommerce-website-jwke.vercel.app",
+    demoLink: "https://ecommerce-website-prakashcs44.vercel.app",
   },
   {
     name: "Graph visualiser",
