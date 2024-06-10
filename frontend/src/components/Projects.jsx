@@ -61,7 +61,7 @@ function Projects() {
       <div className="flex flex-wrap items-center justify-center gap-12 py-10">
         {projects.map((project) => {
           return (
-            <div className=" shadow-lg rounded-lg flex flex-col gap-3 py-4 dark:shadow-slate-500">
+            <div className=" shadow-lg rounded-lg flex flex-col gap-3 py-4 dark:shadow-slate-500" key={project.name}>
               <h2 className="text-xl pb-4 font-medium">{project.name}</h2>
               <img
                 className=" px-8"
