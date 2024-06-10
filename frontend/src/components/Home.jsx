@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useContext } from "react";
-import img from "../assets/WhatsApp Image 2024-04-27 at 2.42.34 PM.jpeg";
+import img from "../assets/me.jpeg";
 import { PageContext } from "../contexts/PageContext";
 function Home() {
   const homeRef = useRef();
