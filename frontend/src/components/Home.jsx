@@ -4,7 +4,7 @@ import { PageContext } from "../contexts/PageContext";
 function Home() {
   const homeRef = useRef();
   const { setCurrSection, darkMode } = useContext(PageContext);
-  console.log(useContext(PageContext));
+  
 
   useEffect(() => {
     const observer = new IntersectionObserver(

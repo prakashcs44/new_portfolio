@@ -5,7 +5,7 @@ function About() {
 
   const aboutRef = useRef();
   const {setCurrSection} = useContext(PageContext);
- console.log(useContext(PageContext));
+ 
 
   useEffect(()=>{
    const observer = new IntersectionObserver((entries)=>{
