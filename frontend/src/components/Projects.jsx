@@ -1,7 +1,7 @@
 import React, { useRef, useEffect,  useContext } from "react";
 import p1img from "../assets/homepage-GoogleChrome2024-04-2710-31-15-ezgif.com-video-to-gif-converter.gif";
 import p2img from "../assets/Graphvisualizer-GoogleChrome2024-04-2710-32-48-ezgif.com-video-to-gif-converter.gif";
-import p3img from "../assets/Document-GoogleChrome2024-04-2711-36-23-ezgif.com-video-to-gif-converter.gif";
+import p3img from "../assets/echopost.png";
 import p4img from "../assets/Moviesearch-GoogleChrome2024-04-2711-51-51-ezgif.com-video-to-gif-converter.gif";
 import {PageContext} from "../contexts/PageContext";
 const projects = [
@@ -20,18 +20,18 @@ const projects = [
     demoLink: "https://prakashcs44.github.io/graph-visualizer/",
   },
   {
-    name: "Flappy Bird",
+    name: "Echo Post",
     imgLink: p3img,
-    desc: "Flappy bird game ",
-    sourceLink: "https://github.com/prakashcs44/flappy_bird",
-    demoLink: "https://prakashcs44.github.io/flappy_bird/",
+    desc: "Social media platform where you can connect with people and share your stories and experiences",
+    sourceLink: "https://github.com/prakashcs44/Echo-post/",
+    demoLink: "https://echo-post.vercel.app",
   },
   {
     name: "Movie search",
     imgLink: p4img,
     desc: "Movie searching website that used omdp api to fetch movies ",
-    sourceLink: "https://github.com/prakashcs44/flappy_bird",
-    demoLink: "https://prakashcs44.github.io/flappy_bird/",
+    sourceLink: "https://github.com/prakashcs44/movie-search-app",
+    demoLink: "https://prakashcs44.github.io/movie-search-app/",
   },
 ];
 
@@ -61,15 +61,15 @@ function Projects() {
       <div className="flex flex-wrap items-center justify-center gap-12 py-10">
         {projects.map((project) => {
           return (
-            <div className=" shadow-lg rounded-lg flex flex-col gap-3 py-4 dark:shadow-slate-500" key={project.name}>
+            <div className=" shadow-lg rounded-lg flex flex-col items-center gap-3 py-4 dark:shadow-slate-500" key={project.name}>
               <h2 className="text-xl pb-4 font-medium">{project.name}</h2>
               <img
-                className=" px-8"
+                className="px-8 "
                 src={project.imgLink}
                 alt={project.name}
               ></img>
 
-              <div className="text-lg font-sm">
+              <div className="text-lg font-sm px-3">
                 <h3>{project.desc}</h3>
               </div>
               <div className="flex gap-4 justify-center items-center">
