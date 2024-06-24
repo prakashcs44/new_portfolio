@@ -1,5 +1,5 @@
 import React, { useRef, useEffect, useContext } from "react";
-import img from "../assets/me.jpeg";
+import img from "../assets/pic1.jpg";
 import { PageContext } from "../contexts/PageContext";
 function Home() {
   const homeRef = useRef();
@@ -29,11 +29,11 @@ function Home() {
       className="dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg scroll-m-20 "
       ref={homeRef}
     >
-      <div className="flex flex-col md:h-[70vh]  items-center md:flex-row gap-40">
+      <div className="py-8 flex flex-col md:h-[70vh]  items-center gap-10 md:flex-row md:gap-40">
         <img
           src={img}
           alt="prakash"
-          className="rounded-full w-80 h-80 flex-shrink-0"
+          className="rounded-full size-80 flex-shrink-0 object-cover"
         />
         <div className="py-4 text-center md:text-start px-5">
           <p className="text-lg">HEY THERE! I'M</p>
