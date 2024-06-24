@@ -13,19 +13,20 @@ const projects = [
     demoLink: "https://ecommerce-website-prakashcs44.vercel.app",
   },
   {
+    name: "Echo Post",
+    imgLink: p3img,
+    desc: "Echo Post a full stack social media app",
+    sourceLink: "https://github.com/prakashcs44/Echo-post/",
+    demoLink: "https://echo-post.vercel.app",
+  },
+  {
     name: "Graph visualiser",
     imgLink: p2img,
     desc: "Graph visualiser where you can visualisze dfs and bfs algorithms",
     sourceLink: "https://github.com/prakashcs44/graph_visualizer",
     demoLink: "https://prakashcs44.github.io/graph-visualizer/",
   },
-  {
-    name: "Echo Post",
-    imgLink: p3img,
-    desc: "Social media platform where you can connect with people and share your stories and experiences",
-    sourceLink: "https://github.com/prakashcs44/Echo-post/",
-    demoLink: "https://echo-post.vercel.app",
-  },
+ 
   {
     name: "Movie search",
     imgLink: p4img,
@@ -56,7 +57,7 @@ function Projects() {
   },[])
 
   return (
-    <div id = "projects" className=" mt-36 text-center w-[95vw] dark:text-white dark:bg-slate-900 dark:shadow-slate-900 flex flex-col items-center" ref={projectsRef}>
+    <div id = "projects" className=" mt-36 text-center w-[95vw] dark:text-white dark:bg-slate-900 dark:shadow-slate-900 flex flex-col items-center scroll-m-20" ref={projectsRef}>
       <h1 className="text-3xl font-bold border-b-2 py-8 w-[90%]">MY PROJECTS</h1>
       <div className="flex flex-wrap items-center justify-center gap-12 py-10">
         {projects.map((project) => {

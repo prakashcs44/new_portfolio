@@ -29,7 +29,10 @@ function Header() {
 
  const navItemHandler = (id)=>{
   setCurrSection(id);
-    document.getElementById(id).scrollIntoView(true);
+    document.getElementById(id).scrollIntoView({
+      behavior:"smooth"
+    });
+    
  }
  
   return (

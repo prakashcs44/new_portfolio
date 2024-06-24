@@ -26,7 +26,7 @@ function Contact() {
 
 
   return (
-    <div id="contact" className="w-[95vw] shadow-md mt-24 dark:bg-slate-900 dark:text-white flex flex-col items-center" ref={contactRef}>
+    <div id="contact" className="w-[95vw] shadow-md mt-24 dark:bg-slate-900 dark:text-white flex flex-col items-center scroll-m-20" ref={contactRef}>
       <h1 className="text-center text-3xl border-b-2 font-bold py-8 w-[90%]">
         Contact
       </h1>

@@ -26,7 +26,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg  "
+      className="dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg scroll-m-20 "
       ref={homeRef}
     >
       <div className="flex flex-col md:h-[70vh]  items-center md:flex-row gap-40">

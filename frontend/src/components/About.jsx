@@ -25,7 +25,7 @@ function About() {
 
 
   return (
-    <div id="about" className='dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg' ref = {aboutRef}>
+    <div id="about" className='dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg scroll-m-20' ref = {aboutRef}>
      
      <h1 className="text-center text-3xl border-b-2 font-bold py-8 w-[90%] ">
        About me
