@@ -1,9 +1,10 @@
-import React, { useRef, useEffect,  useContext } from "react";
+import React  from "react";
 import p1img from "../assets/homepage-GoogleChrome2024-04-2710-31-15-ezgif.com-video-to-gif-converter.gif";
 import p2img from "../assets/Graphvisualizer-GoogleChrome2024-04-2710-32-48-ezgif.com-video-to-gif-converter.gif";
 import p3img from "../assets/echopost.png";
 import p4img from "../assets/Moviesearch-GoogleChrome2024-04-2711-51-51-ezgif.com-video-to-gif-converter.gif";
-import {PageContext} from "../contexts/PageContext";
+import {useIntersectionObserver} from "../hooks/useIntersectionObserver"
+
 const projects = [
   {
     name: "Ecommerce website",
@@ -37,24 +38,11 @@ const projects = [
 ];
 
 function Projects() {
-  const {setCurrSection} = useContext(PageContext);
- const projectsRef = useRef();
+  
+ const projectsRef = useIntersectionObserver("projects");
 
 
-  useEffect(()=>{
-   const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          setCurrSection("projects");
-        }
-      })
-   },{threshold:0.3});
-
-   observer.observe(projectsRef.current);
-
-   return ()=>observer.unobserve(projectsRef.current);
-
-  },[])
+  
 
   return (
     <div id = "projects" className=" mt-36 text-center w-[95vw] dark:text-white dark:bg-slate-900 dark:shadow-slate-900 flex flex-col items-center scroll-m-20" ref={projectsRef}>

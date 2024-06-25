@@ -1,28 +1,11 @@
-import React,{ useRef, useEffect,useContext }  from "react";
+import React,{useContext }  from "react";
 import {PageContext} from "../contexts/PageContext";
+import {useIntersectionObserver} from "../hooks/useIntersectionObserver"
 
 function Contact() {
 
-  const {setCurrSection,darkMode} = useContext(PageContext);
-  const contactRef = useRef();
-
-
-  useEffect(()=>{
-   const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          setCurrSection("contact");
-          
-          
-        }
-      })
-   },{threshold:0.3});
-
-   observer.observe(contactRef.current);
-
-   return ()=>observer.unobserve(contactRef.current);
-
-  },[])
+  const {darkMode} = useContext(PageContext);
+  const contactRef = useIntersectionObserver("contact");
 
 
   return (

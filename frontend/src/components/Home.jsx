@@ -1,28 +1,14 @@
-import React, { useRef, useEffect, useContext } from "react";
+import React, {  useContext } from "react";
 import img from "../assets/pic1.jpg";
 import { PageContext } from "../contexts/PageContext";
+import {useIntersectionObserver} from "../hooks/useIntersectionObserver"
 function Home() {
-  const homeRef = useRef();
-  const { setCurrSection, darkMode } = useContext(PageContext);
   
+  const { darkMode } = useContext(PageContext);
+  const homeRef  = useIntersectionObserver("home");
 
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setCurrSection("home");
-          }
-        });
-      },
-      { threshold: 0.3 }
-    );
 
-    observer.observe(homeRef.current);
-
-    return () => observer.unobserve(homeRef.current);
-  }, []);
-
+ 
   return (
     <div
       id="home"

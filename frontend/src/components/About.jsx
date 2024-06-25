@@ -1,26 +1,12 @@
-import React,{ useRef, useEffect, useContext } from 'react';
-import {PageContext} from "../contexts/PageContext";
+import React from 'react';
+
+import {useIntersectionObserver} from "../hooks/useIntersectionObserver"
 function About() {
 
 
-  const aboutRef = useRef();
-  const {setCurrSection} = useContext(PageContext);
+  const aboutRef = useIntersectionObserver("about");
+  
  
-
-  useEffect(()=>{
-   const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          setCurrSection("about");
-        }
-      })
-   },{threshold:0.3});
-
-   observer.observe(aboutRef.current);
-
-   return ()=>observer.unobserve(aboutRef.current);
-
-  },[])
 
 
 

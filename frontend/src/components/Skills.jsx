@@ -1,31 +1,19 @@
-import React, { useState,useRef,useEffect, useContext } from "react";
-import {PageContext} from "../contexts/PageContext";
+import React, { useState} from "react";
+
+import {useIntersectionObserver} from "../hooks/useIntersectionObserver"
+
 function Skills() {
   const [section, setSection] = useState("techstack");
-   const {setCurrSection} = useContext(PageContext);
+   const skillsRef = useIntersectionObserver("skills");
   const skillSectionHandler = (s) => {
     setSection(s);
   };
 
 
-  const skillsRef = useRef();
+  
 
 
-  useEffect(()=>{
-   const observer = new IntersectionObserver((entries)=>{
-      entries.forEach(entry=>{
-        if(entry.isIntersecting){
-          setCurrSection("skills");
-        }
-      })
-   },{threshold:0.3});
-
-   observer.observe(skillsRef.current);
-
-   return ()=>observer.unobserve(skillsRef.current);
-
-  },[])
-
+ 
 
 
   return (
