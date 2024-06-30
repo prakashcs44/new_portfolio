@@ -17,7 +17,7 @@ function Skills() {
 
 
   return (
-    <div id="skills" className=" shadow-md w-[95vw]  mt-20 dark:bg-slate-900 dark:text-white pb-12 flex flex-col items-center scroll-m-20" ref={skillsRef}>
+    <div id="skills" className=" w-[95vw]  mt-20 dark:bg-slate-900 dark:text-white  pb-12 flex flex-col items-center scroll-m-20" ref={skillsRef}>
       <h1 className="text-center text-3xl border-b-2 font-bold py-8 w-[90%]">
         Skills
       </h1>

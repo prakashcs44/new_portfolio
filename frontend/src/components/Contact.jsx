@@ -2,6 +2,7 @@ import React,{useContext }  from "react";
 import {PageContext} from "../contexts/PageContext";
 import {useIntersectionObserver} from "../hooks/useIntersectionObserver"
 
+
 function Contact() {
 
   const {darkMode} = useContext(PageContext);
@@ -9,7 +10,7 @@ function Contact() {
 
 
   return (
-    <div id="contact" className="w-[95vw] shadow-md mt-24 dark:bg-slate-900 dark:text-white flex flex-col items-center scroll-m-20" ref={contactRef}>
+    <div id="contact" className="w-[95vw]  mt-24 dark:bg-slate-900 dark:text-white  flex flex-col items-center scroll-m-20" ref={contactRef}>
       <h1 className="text-center text-3xl border-b-2 font-bold py-8 w-[90%]">
         Contact
       </h1>
@@ -58,6 +59,8 @@ function Contact() {
               className="w-80 h-24 border border-gray-300 rounded-md px-3 py-2"
             />
           </div>
+
+             
 
           <button
             type="submit"

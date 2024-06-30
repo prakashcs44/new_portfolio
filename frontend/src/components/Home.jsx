@@ -12,7 +12,7 @@ function Home() {
   return (
     <div
       id="home"
-      className="dark:text-slate-200 dark:bg-slate-900  dark:shadow-slate-900 mt-32 flex flex-col items-center w-[95vw] shadow-lg scroll-m-20 "
+      className="dark:text-slate-200 dark:bg-slate-900    mt-32 flex flex-col items-center w-[95vw]  scroll-m-20 "
       ref={homeRef}
     >
       <div className="py-8 flex flex-col md:h-[70vh]  items-center gap-10 md:flex-row md:gap-40">
@@ -43,6 +43,7 @@ function Home() {
           </div>
           <div className="flex items-center gap-10">
             <button className="bg-blue-600 rounded-md shadow-md py-2 hover:bg-blue-700 w-36 text-white font-semibold mt-6">
+              
               <a href="https://drive.google.com/file/d/1H4VtGbOVjsI_rWExUECgGOeJWTqMFjZn/view?usp=drivesdk">
               Resume
               </a>

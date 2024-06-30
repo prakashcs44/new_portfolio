@@ -5,7 +5,7 @@ function Footer() {
   const {darkMode} = useContext(PageContext);
 
   return (
-    <footer className="bg-white rounded-lg shadow m-4 mt-20 flex-shrink-0 w-[95vw] dark:bg-slate-900 dark:text-white">
+    <footer className="bg-white rounded-lg  m-4 mt-20 flex-shrink-0 w-[95vw] dark:bg-slate-900 dark:text-white">
       <div className="w-full mx-auto max-w-screen-xl p-4 md:flex md:items-center md:justify-between">
         <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
           &copy; 2024{" "}

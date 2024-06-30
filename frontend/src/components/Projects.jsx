@@ -45,12 +45,12 @@ function Projects() {
   
 
   return (
-    <div id = "projects" className=" mt-36 text-center w-[95vw] dark:text-white dark:bg-slate-900 dark:shadow-slate-900 flex flex-col items-center scroll-m-20" ref={projectsRef}>
+    <div id = "projects" className=" mt-36 text-center w-[95vw] dark:text-white dark:bg-slate-900   flex flex-col items-center scroll-m-20" ref={projectsRef}>
       <h1 className="text-3xl font-bold border-b-2 py-8 w-[90%]">MY PROJECTS</h1>
       <div className="flex flex-wrap items-center justify-center gap-12 py-10">
         {projects.map((project) => {
           return (
-            <div className=" shadow-lg rounded-lg flex flex-col items-center gap-3 py-4 dark:shadow-slate-500" key={project.name}>
+            <div className=" shadow-lg rounded-lg flex flex-col items-center gap-3 py-4 dark:shadow-slate-800 " key={project.name}>
               <h2 className="text-xl pb-4 font-medium">{project.name}</h2>
               <img
                 className="px-8 "
