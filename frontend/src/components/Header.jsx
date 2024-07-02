@@ -36,9 +36,9 @@ function Header() {
  }
  
   return (
-    <div className="py-5  w-full fixed z-10 bg-white top-0 dark:text-white dark:bg-slate-900 ">
+    <div className="hidden md:block py-5  w-full fixed z-10 bg-white top-0 dark:text-white dark:bg-slate-900 ">
       
-      <ul className="hidden md:flex justify-center gap-28 font-medium">
+      <ul className="flex justify-center gap-28 font-medium">
         {navItem.map((item) => {
           return (
             <li
@@ -81,7 +81,7 @@ function Header() {
           </button>
         </li>
       </ul>
-      <HamburgerMenu navItemHandler={navItemHandler}/>
+      
     </div>
   );
 }

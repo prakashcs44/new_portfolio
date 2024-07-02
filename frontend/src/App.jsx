@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Home from "./components/Home";
+import SideNav from "./components/SideNav";
 import { PageContext } from "./contexts/PageContext";
 
 function App() {
@@ -13,9 +14,10 @@ function App() {
     <div
       className={`${
         darkMode && "dark"
-      } flex flex-col items-center justify-center relative dark:bg-black `}
+      } flex flex-col items-center justify-center  dark:bg-black `}
     >
       <Header />
+      <SideNav/>
       <Home/>
       <Projects />
       <Skills />
