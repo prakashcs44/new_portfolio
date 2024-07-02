@@ -36,7 +36,7 @@ function Header() {
  }
  
   return (
-    <div className="hidden md:block py-5  w-full fixed z-10 bg-white top-0 dark:text-white dark:bg-slate-900 ">
+    <div className="hidden md:block py-5  w-full fixed z-10 bg-white  top-0 dark:text-white dark:bg-slate-900 dark:bg-opacity-60 bg-opacity-60 backdrop-blur-xl ">
       
       <ul className="flex justify-center gap-28 font-medium">
         {navItem.map((item) => {
